@@ -48,7 +48,7 @@ body {
   left: 0;
   transform: translateY(-50%);
   height: 4px;
-  width: 0;
+  width: 0%;
   z-index: -1;
   transition: 0.4s ease;
 }
@@ -57,36 +57,40 @@ body {
   background-color: #2c2b2b;
   color: #e2e2e2;
   border-radius: 50%;
-  height: 60px;
-  width: 60px;
+  height: 65px;
+  width: 65px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid #353232;
-  transition: 0.4s ease;
+  border: 5px solid #353232;
+  transition: 0.5s ease;
 }
 
 .circle.active {
-  transform: scale(0.98);
+  border-color: #7c34db;
 }
 
 .btn {
-  background-color: #353232;
+  background-color: #7c34db;
   color: white;
   border: 0;
-  border-radius: 6px;
+  border-radius: 10px;
   cursor: pointer;
   font-family: inherit;
   font-size: 3rem;
-  padding: 8px 30px;
+  padding: 10px 40px;
   margin: 5px;
 }
 
 .btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
   outline: 0;
 }
 
 .btn:disabled {
-  background-color: #7c34db;
+  background-color: #353232;
   cursor: not-allowed;
 }

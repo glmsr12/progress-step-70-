@@ -30,5 +30,4 @@ function update() {
       circle.classList.remove('active');
     }
   });
-
- 
+}
