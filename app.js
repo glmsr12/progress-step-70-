@@ -5,6 +5,8 @@ const circles = document.querySelectorAll('.circle');
 
 let currentActive = 1;
 
+// next button
+
 next.addEventListener('click', () => {
   currentActive++;
 
@@ -15,6 +17,7 @@ next.addEventListener('click', () => {
   update();
 });
 
+//previos button
 prev.addEventListener('click', () => {
   currentActive--;
 
@@ -36,6 +39,7 @@ function update() {
 
   const actives = document.querySelectorAll('.active');
 
+  //progress bar
   progress.style.width =
     ((actives.length - 1) / (circles.length - 1)) * 100 + '%';
 
