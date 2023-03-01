@@ -66,6 +66,10 @@ body {
   transition: 0.4s ease;
 }
 
+.circle.active {
+  transform: scale(0.98);
+}
+
 .btn {
   background-color: #353232;
   color: white;
@@ -76,4 +80,13 @@ body {
   font-size: 3rem;
   padding: 8px 30px;
   margin: 5px;
+}
+
+.btn:active {
+  outline: 0;
+}
+
+.btn:disabled {
+  background-color: #7c34db;
+  cursor: not-allowed;
 }
